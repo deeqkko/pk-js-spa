@@ -3,11 +3,10 @@ UAS web-appdev training stash
 
 Nothing fancy. Just a bunch of separate files for homework assignments.
 
------------------- Modern style disclaimer--------------------------------------
 If you REALLY find here anything worth copying do so at your own risk. If you
 manage to break something or get lousy grades... "Aaawwww boohoo! Let me play
 a sad song for you on the world smallest violin!"
---------------------------------------------------------------------------------
+
 Assignment 1:
 
 Make a web page which has a number input field, which asks the age of the user
@@ -20,5 +19,5 @@ Make user interface so that it will work on all popular devices and browsers,
 including mobile. And so that it will behave nicely e.g. output an error
 message, in case user gives no input or erroneous input
 
-filename = happybirthday.html
+filename = assignment1.html
 --------------------------------------------------------------------------------
