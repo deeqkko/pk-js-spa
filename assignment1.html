@@ -17,8 +17,10 @@
             result = "Not a number."
         } else if (inputAge < 0) {
             result = "Whoa! Get your hand back in and tell your mommy to wear panties!"
-        } else if (inputAge > 100) {
+        } else if ((inputAge > 100) && (inputAge <= 120)){
             result = "Your birth year is " + result + " You're one tuff SOB! Gotta give ya that.";
+        } else if (inputAge > 120) {
+            result = "You're dead";
         } else {
             result = "Your birth year is " + result;
         }
