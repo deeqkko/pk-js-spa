@@ -4,7 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Age-o-Matic</title>
+    <script>
+    function calDiff(){
+        var inputAge = parseFloat(document.getElementById("birthday").value);
+        var thisYear = new Date();
+        var result = 0;
+        result = thisYear.getFullYear() - inputAge;
+        console.log(result);
+
+        if (isNaN(inputAge)){
+            result = "Not a number."
+        } else if (inputAge < 0) {
+            result = "Whoa! Get your hand back in and tell your mommy to wear panties!"
+        } else if (inputAge > 100) {
+            result = "Your birth year is " + result + " You're one tuff SOB! Gotta give ya that.";
+        } else {
+            result = "Your birth year is " + result;
+        }
+
+        document.getElementById("yourAge").innerHTML = result;
+    }
+    </script>
 </head>
 <body>
     <!--Assignment 1:
@@ -20,7 +41,17 @@
     message, in case user gives no input or erroneous input
     -->
 
-    <h1>Birthday-o-matic</h1>
+    <h1>Age-o-matic</h1>
+    <h3>"And you never forget how old you are!"</h3>
+
+    <form action="">
+        <label for="date">Enter your age:</label><br>
+        <input type="number" id ="birthday" autofocus>
+        <input type="button" value="GO!" onclick="calDiff()">
+        <output id="yourAge"></output>
+
+    </form>
+
 
 </body>
 </html>
