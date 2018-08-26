@@ -8,29 +8,44 @@
     <title>Age-o-Matic</title>
     <script>
             function calDiff() {
-                /*Calculates a birth year based on current year and given birth year.
+                /*
+                Calculates a birth year based on current year and given birth year.
                 Excepted input: number, NaN
                 Output: string
+
+
+                /*
+                Fetches input from html element and parses it to a number value.
+                Rounding is made in case input value is not an integer.
+                Current time is stored and used with imput value to calculate the birth year.
+
                 */
-
                 var inputAge = Math.round(parseFloat(document.getElementById("birthday").value));
-                var thisYear = new Date();
+                var thisYear = new Date(); //Gets current time
                 var result = 0;
-                result = thisYear.getFullYear() - inputAge;
+                result = thisYear.getFullYear() - inputAge; //Calculates the birth year
 
-
+                /*
+                Evaluation. Result must be a positive integer ranging from 0 to 120.
+                If not, an error message is returned instead of numeric result.
+                First condition is to prevent runtime errors caused by a wrong type of input.
+                The following conditions are merely for logical errors (e.g. haven't met
+                a man with a negative age).
+                */
                 if (isNaN(inputAge)) {
-                    result = "Not a number."
-                } else if (inputAge < 0) {
-                    result = "Error: Negative age value. Whoa! Pull your hand back and tell your mommy to wear panties!"
+                    result = "Not a number.";    //Not a number error.
+                } else if (inputAge < 0) {       //Negative value error
+                    result = "Error: Negative age value. Whoa!\
+                             Pull your hand back and tell your mommy to wear panties!";
                 } else if ((inputAge > 100) && (inputAge <= 120)) {
                     result = "Your birth year is " + result + " You're one tuff SOB! Gotta give ya that.";
-                } else if (inputAge > 120) {
+                } else if (inputAge > 120) {     //Out of range error
                     result = "Error: Not a viable age of a human being. Be gone you devil! You're dead!";
                 } else {
                     result = "Your birth year is " + result;
                 }
 
+                //Calculated value is returned.
                 document.getElementById("yourAge").innerHTML = result;
         }
     </script>
