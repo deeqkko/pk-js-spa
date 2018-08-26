@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assignment1.css" type="text/css">
     <title>Age-o-Matic</title>
     <script>
             function calDiff() {
@@ -65,13 +66,13 @@
     message, in case user gives no input or erroneous input
     -->
 
-    <h1>Age-o-matic</h1>
+    <h1>Age-o-Matic</h1>
     <h3>"And you never forget how old you are!"</h3>
 
     <form action="">
-        <label for="date">Enter your age and remember your birth year:</label><br>
+        <label for="date">Enter your age and get your birth year:</label><br>
         <input type="number" id="birthday" autofocus>
-        <input type="button" value="GO!" onclick="calDiff()">
+        <input type="button" id="button" value="Get it!" onclick="calDiff()">
         <p><output id="yourAge"></output></p>
 
     </form>

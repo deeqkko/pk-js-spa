@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background-color: #ebeef4;
+    margin: 0;
+}
+
+h1, h2, h3, p, form {
+    font-family: sans, sans-serif;
+}
+
+h1 {
+    background-color: #275fba;
+    padding: 30px;
+    margin: 0;
+}
+
+#birthday {
+    margin: 20px 0px;
+    width: 80px;
+    font-size: 1.6em
+
+}
+
+#button {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#yourAge {
+    font-size: 1.2em;
