@@ -22,11 +22,11 @@
                 if (isNaN(inputAge)) {
                     result = "Not a number."
                 } else if (inputAge < 0) {
-                    result = "Whoa! Pull your hand back and tell your mommy to wear panties!"
+                    result = "Error: Negative age value. Whoa! Pull your hand back and tell your mommy to wear panties!"
                 } else if ((inputAge > 100) && (inputAge <= 120)) {
                     result = "Your birth year is " + result + " You're one tuff SOB! Gotta give ya that.";
                 } else if (inputAge > 120) {
-                    result = "Be gone you devil! You're dead!";
+                    result = "Error: Not a viable age of a human being. Be gone you devil! You're dead!";
                 } else {
                     result = "Your birth year is " + result;
                 }
