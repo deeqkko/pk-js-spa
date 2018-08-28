@@ -1,3 +1,5 @@
+//Assignment #2_2
+
 //Returns a last character of given string [s]
 
 function lastCharacter(s){return(s[s.length-1])};

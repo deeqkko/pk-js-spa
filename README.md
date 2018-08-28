@@ -42,9 +42,9 @@ button *2 multiplies number by 2
 button /2 divides number by 2 and rounds down (Math.floor())
 reset button resets the number to 0
 
-filename = n/a
+filename = assignment2_1.html
 
-STATUS: NOT STARTED
+STATUS: WORKING CODE
 
 Assignment 2_2:
 
