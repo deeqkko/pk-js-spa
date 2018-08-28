@@ -27,4 +27,30 @@ including mobile. And so that it will behave nicely e.g. output an error
 message, in case user gives no input or erroneous input
 
 filename = assignment1.html
+
+STATUS: COMPLETE
 -----------------------------------------------------------------------------
+
+Assignment 2:
+
+Exercises for next lesson:
+
+make a web page with 5 buttons and 1 text display with the number 0 at start
+button +1 increments number by 1
+button -1 decrements number by 1
+button *2 multiplies number by 2
+button /2 divides number by 2 and rounds down (Math.floor())
+reset button resets the number to 0
+
+filename = n/a
+
+STATUS: NOT STARTED
+
+Assignment 2_2:
+
+Strings Exercise for next lesson
+make function lastCharacter(s), which always returns the last character of string s
+
+filename = assignment2_2.js
+
+STATUS: COMPLETE
