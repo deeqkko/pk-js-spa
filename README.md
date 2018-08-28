@@ -7,6 +7,13 @@ If you REALLY find here anything worth copying do so at your own risk. If you
 manage to break something or get lousy grades... "Aaawwww boohoo! Let me play
 a sad song for you on the world smallest violin!"
 
+jstutorial:
+
+Tutorials from Mozilla tutorial page:
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+
+-----------------------------------------------------------------------------
+
 Assignment 1:
 
 Make a web page which has a number input field, which asks the age of the user
@@ -20,4 +27,4 @@ including mobile. And so that it will behave nicely e.g. output an error
 message, in case user gives no input or erroneous input
 
 filename = assignment1.html
---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------
