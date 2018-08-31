@@ -44,6 +44,10 @@ reset button resets the number to 0
 
 filename = assignment2_1.html
 
+UPDATE: Connected adding and subtracting to one method.
+Connected multiplying and dividing to one method.
+Changed reset method to work with an input argument.
+
 STATUS: WORKING CODE
 
 Assignment 2_2:

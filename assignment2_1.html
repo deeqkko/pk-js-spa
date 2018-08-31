@@ -8,12 +8,21 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <title>Assignment2_2</title>
   <script>
+
+    
     var result = 0;
-    function addOne() {result +=1;}
-    function subOne() {result -= 1;}
-    function multipleByTwo() {result *=2;}
-    function divideByTwo(){result = Math.floor(result / 2)}
-    function resetValue() {result = 0;}
+    function addsubValue(amount) {
+      result += amount;
+      updateValue();
+    }
+    function multdivValue(amount) {
+        result *= amount;
+        updateValue();
+    }
+    function resetValue(amount) {
+        result = amount;
+        updateValue();
+    }
     function updateValue(){document.getElementById("result").innerHTML = result;}
   </script>
 
@@ -23,12 +32,12 @@
   <h1>Counter</h1>
   <h3>Assignment 2</h3>
   <form action="index.html">
-    <input type="button" id="x2" value="x2" onclick="multipleByTwo();updateValue();"></input>
-    <input type="button" id="+1" value="+1" onclick="addOne();updateValue();"></input>
+    <input type="button" id="x2" value="x2" onclick="multdivValue(2);"></input>
+    <input type="button" id="+1" value="+1" onclick="addsubValue(1);"></input>
     <output id="result">0</output>
-    <input type="button" id="-1" value="-1" onclick="subOne();updateValue();"></input>
-    <input type="button" id="/2" value="/2" onclick="divideByTwo();updateValue();"></input><br>
-    <input type="button" id="Reset" value="Reset" onclick="resetValue();updateValue();"></input>
+    <input type="button" id="-1" value="-1" onclick="addsubValue(-1);"></input>
+    <input type="button" id="/2" value="/2" onclick="multdivValue(0.5);"></input><br>
+    <input type="button" id="Reset" value="Reset" onclick="resetValue(0);"></input>
 
   </form>
 
