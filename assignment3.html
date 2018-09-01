@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta content="javascript excercises" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Regex-excercises</title>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <script type="text/javascript">
+    /*make a JavaScript regular expression, which accepts any number from
+                1 to 9 with or without leading minus (-) e.g. suitable inputInteger are
+                1, 2, 3, -1, -9, 9 and invalid inputInteger are 1x, x1, 10, 0, -13*/
+
+
+    function getUserValues(elementName) {
+      return document.getElementById(elementName).value;
+    }
+
+    function setEvaluated(elementName, resultStr) {
+      document.getElementById(elementName).innerHTML = resultStr;
+    }
+
+    function filterString(inputFieldID, outputFieldID, regex) {
+      let inputIntegertring = null;
+      let resultString = "Invalid input";
+      inputIntegertring = getUserValues(inputFieldID);
+      if (inputIntegertring.match(regex) != null) {
+        resultString = inputIntegertring;
+      }
+      setEvaluated(outputFieldID, resultString);
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Regex</h1>
+  <form action="">
+    <label for="inputInteger">Positive or negative integer<br>Enter a positive or negative integer:</label><br>
+    <input type="text" id="inputInteger" value="" autofocus>
+    <input type="button" id="button" value="Check" onclick="filterString(inputInteger.id, resultInteger.id,(/^-?\d+$/g));">
+    <!-- Muista html-tagissa laittaa js-merkkijonoviittaus SULKEISIIN ilman lainausmerkkiä! -->
+    <output id="resultInteger"></output><br>
+    <label for="inputZip">Enter a valid 5-digit ZIP-code:<br></label>
+    <input type="text" id="inputZip" value="">
+    <input type="button" id="button" value="Check" onclick="filterString(inputZip.id, resultZip.id,(/^\d{5}/g));">
+    <output id="resultZip"></output><br>
+    <label for="inputZip">Enter either "yes" or "no" (case-insensitive):<br></label>
+    <input type="text" id="inputYN" value="">
+    <input type="button" id="button" value="Check" onclick="filterString(inputYN.id, resultYN.id,(/^yes$|^no$/ig));">
+    <output id="resultYN"></output><br>
+  </form>
+
+</body>
+
+</html>

@@ -58,3 +58,28 @@ make function lastCharacter(s), which always returns the last character of strin
 filename = assignment2_2.js
 
 STATUS: COMPLETE
+-------------------------------------------------------------------------------
+Assignment 3
+
+
+Lesson #3 (Wed 29th Aug 2018)
+
+
+Introduction to Regular Expressions
+Regular Expressions Exercises for next lesson
+
+make a JavaScript regular expression, which accepts any number from 1 to 9 with or without leading minus (-) e.g. suitable inputs are 1, 2, 3, -1, -9, 9 and invalid inputs are 1x, x1, 10, 0, -13
+
+COMPLETE
+
+make a JavaScipt regular expression, which accepts 5-digit zip codes e.g. 12345, 00000, 99999, 87665 are all valid and the following are invalid: 1234, 123456, 12345x, x12345, 667a89
+
+COMPLETE
+
+make a web page which has one text input field and check button. The check button verifies that the user has inputted either "yes" or "no", written in any combination of uppercase and lowercase. Thus the following are valid inputs: Yes, YES, yes, YeS, nO and the following are invalid: Yes sir, Not, EI, SI, nyet, da
+
+COMPLETE
+
+filename = assignment3.html
+
+STATUS:COMPETE
