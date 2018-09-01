@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Password_validator</title>
+    <script type="text/javascript">
+
+      function getPassWordValue(elementName){
+        return document.getElementById(elementName).value;
+      }
+
+      function validatePassWord(){
+        let passWord1 = getPassWordValue("passWordField1");
+        let passWord2 = getPassWordValue("passWordField2");
+        validatorResult = "Error: Passwords mismatch.";
+        if (passWord1 == passWord2){
+          validatorResult = "Error: Password length must be 8 - 30 and contain only characters [a-z, A-Z, 0-9, .,_-]";
+          if (passWord1.match(/^[\w,\._-]{8,30}$/g)){
+            validatorResult = "Valid password";
+          }
+          }
+        document.getElementById("validatorOutput").innerHTML = validatorResult;
+      }
+
+    </script>
+</head>
+<body>
+  <h1>Password Validator</h1>
+  <p>Enter your password twice. Valid password can be 8 - 30 characters long and contain [a-z, A-Z, 0-9, .,_-] </p><br>
+  <form action="">
+    <label for="passWordField1">Enter a password:</label>
+    <input type="password" id="passWordField1" value=""><br>
+    <label for="passWordField2">Enter the password second time:</label>
+    <input type="password" id="passWordField2" value=""><br>
+    <input type="button" id="validatePassword" value="Validate" onclick="validatePassWord()"><br>
+    <output id="validatorOutput"></output>
+
+
+  </form>
+
+</body>
+</html>

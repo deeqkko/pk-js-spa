@@ -83,3 +83,11 @@ COMPLETE
 filename = assignment3.html
 
 STATUS:COMPETE
+
+Exercise #1 (difficult)
+
+make a web page, which a form, which has a validate button and it has two password fields and code which validates that the input in both password fields is equal. The password must have 8...30 characters and can only contain the following characters: a-z, A-Z, 0-9 and .,_-
+
+filename = passwd_validator.html
+
+STATUS:COMPLETE
