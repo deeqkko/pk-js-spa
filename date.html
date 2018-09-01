@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Date_validator</title>
+    <script type="text/javascript">
+
+      function validateDate(){
+        inputDate = document.getElementById("dateInput").value;
+        validationResult = "Invalid date format or date."
+        if (inputDate.match(/(^(0?[1-9])|([1-2]\d|30|31))\.((0?[1-9])|(1?[0-2]))\.([1-9][0-9]{3})$/g)){
+          validationResult = inputDate +" "+ "is a valid date format"
+        }
+        document.getElementById("resultValidation").innerHTML = validationResult;
+      }
+    </script>
+</head>
+<body>
+  <h1>Date Validator</h1>
+  <p>Validate your date input. Following formats are legal: [d.m.yyyy], [dd.mm.yyyy]
+  Days: 1 - 31
+  Months: 1 - 12
+  Years: 1000 - 9999
+  </p>
+  <form action="">
+    <label for="dateInput">Enter a date:</label>
+    <input type="text" id="dateInput" value="" autofocus>
+    <input type="button" id="button" value="Validate" onclick="validateDate()"><br>
+    <output id="resultValidation"></output>
+
+  </form>
+
+
+</body>
+</html>
