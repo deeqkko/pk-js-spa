@@ -9,20 +9,20 @@
     <script type="text/javascript">
 
       function validateSsn(){
-        var ssnSalt = "0123456789ABCDEFHJLLMNPRSTUVWXY"
+        var ssnSalt = "0123456789ABCDEFHJLLMNPRSTUVWXY";
         var ssn = document.getElementById("inputSsn").value;
-        var resultSsn = "Epäkelpo henkilötunnus."
-        var gender = "Mies"
+        var resultSsn = "Epäkelpo henkilötunnus.";
+        var gender = "Mies";
         if ((ssn.match(/^((0[1-9])|([1-2]\d|30|31))((0[1-9])|(1[0-2]))([0-9]{2})[A+-]\d{3}[^GIOQZ]$/ig)) && (002 <= ssn.split(/[a-z+-]/ig)[1] <= 999)){
           var ssnSliced = ssn.split(/[a-z+-]/ig);
           checkSum = (parseInt(ssnSliced[0]+ssnSliced[1])%31);
           if (ssn[ssn.length-1] == ssnSalt[checkSum]){
-            resultSsn = "Validi henkilötunnus."
+            resultSsn = "Validi henkilötunnus.";
             var birthDay = ssn.slice(0,2) + "." + ssn.slice(2,4) + "." + ssn.slice(4,6);
             if (ssn.slice(7,-1)%2 == 0){
-                gender = "Nainen"
+                gender = "Nainen";
             }
-            resultSsn += " Henkilö on " + gender + ". Syntymäaika: " + birthDay         
+            resultSsn += " Henkilö on " + gender + ". Syntymäaika: " + birthDay;
           }
         }
 
