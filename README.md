@@ -91,3 +91,11 @@ make a web page, which a form, which has a validate button and it has two passwo
 filename = passwd_validator.html
 
 STATUS:COMPLETE
+
+Exercise #2 (difficult)
+
+make a web page, which has a form, with one text field and button. Pressing the button will validate that the text field input is a data of the following format day.month.year (days range from 1 to 31, months range from 1 to 12 and years range from 1000 to 9999). There can be leading zeros. For example the following dates are legal: 1.1.2000, 01.01.2000, 31.12.1999, 4.9.2017 and the following dates are invalid: 32.1.2000, 1.13.1999, 39.1.1980, 07.19.1974, 001.001.2000, 1.1.1 and 9.9.10000
+
+filename = date.html
+
+STATUS: COMPLETE
