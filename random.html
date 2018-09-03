@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script type="text/javascript">
+
+      function lottoMasiina(){
+        var lottorivi = [];
+        for (i = 0; i <= 10; i++){
+          lottonumero = Math.floor((Math.random() * 40) + 1);
+          if (lottonumero < 10){
+            lottonumero = '0' + lottonumero;
+          }
+          lottorivi.push(lottonumero);
+        }
+        document.getElementById('resultRandom').innerHTML = lottorivi.sort();
+      }
+
+    </script>
+    <title>Lottomasiina</title>
+</head>
+<body>
+    <h1>Lottomasiina</h1>
+    <p>"Arvotaan kymmenen numeroa:"</p>
+    <input type="button" id="button" value="Tulta!" onclick="lottoMasiina()"><br>
+    <output id="resultRandom"></output>
+
+</body>
+</html>
