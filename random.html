@@ -14,9 +14,9 @@
           if (lottonumero < 10){
             lottonumero = '0' + lottonumero;
           }
-          lottorivi.push(lottonumero);
+          lottorivi.push(String(lottonumero));
         }
-        document.getElementById('resultRandom').innerHTML = lottorivi.sort();
+        document.getElementById('resultRandom').innerHTML = lottorivi.sort().map(x => x.replace(/0/,""));
       }
 
     </script>
