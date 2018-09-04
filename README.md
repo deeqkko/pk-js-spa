@@ -99,3 +99,27 @@ make a web page, which has a form, with one text field and button. Pressing the 
 filename = date.html
 
 STATUS: COMPLETE
+
+Exercise #3 (difficult)
+
+make a web page, which has a form with one text field and button. Pressing the button will validate that the input is a valid Finnish id number. Also out the birthdate of the person in format day.month.year and tell the gender (male/female) See https://fi.wikipedia.org/wiki/Henkil%C3%B6tunnus
+
+filename = ssn_validator.html
+
+STATUS: WORKING CODE
+
+Exercise #4 (difficult)
+
+make a web page, which always draws 7 random numbers out of 1...40. Output should be sorted in ascending order.
+
+filename = random.html
+
+STATUS:COMPLETE
+
+Exercise #5 (non greedy matching)
+
+make a web form, which has a textarea, where you can input HTML/XML/XHTML code and a button. Pressing the button will strip out all HTML/XML/XHTML
+
+filename = strip_tags.html
+
+STATUS:COMPLETE

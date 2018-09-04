@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strip markup language tags</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script type="text/javascript">
+
+      function stripMarkup(){
+        var cleanedSentence = document.getElementById("inputMarkup").value.replace(/<\/?\w+>/gi, "");
+        document.getElementById("stripped").innerHTML = cleanedSentence;
+      }
+
+    </script>
+</head>
+<body>
+    <h1>Untag-o-matic</h1>
+    <p>Strip all markup language tags from text input</p>
+    <input type="text" id="inputMarkup" size="180" value="">
+    <input type="button" id="button" value="Strip" onclick="stripMarkup()"><br>
+    <output id="stripped"></output>
+
+</body>
+</html>
