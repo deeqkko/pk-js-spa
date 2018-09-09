@@ -123,3 +123,12 @@ make a web form, which has a textarea, where you can input HTML/XML/XHTML code a
 filename = strip_tags.html
 
 STATUS:COMPLETE
+
+Exercise (rehearse arrays, regular expressions, functions, strings and numbers - quite difficult, but very useful)
+make a web form with text area, which allows the input of multiple numbers separated by ; : , or space. Pressing a button will sum up all the numbers together
+
+continue with above and also calculate mean (average) and median. Make separate functions without any side effects (in other words the argument to median(a) should NOT alter the argument a or any other variable.
+
+filename = sum_mean_med.html
+
+STATUS:COMPLETE

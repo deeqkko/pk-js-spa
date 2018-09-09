@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 5</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script type="text/javascript">
+
+      function userValues(){
+        var userArray = document.getElementById("inputNumbers").value.replace(/[:;,\s]+/g, ",").replace(/[^:;,-\.\d]/gi,"").trim().split(",").map(x => Number(x));
+        var outputArray = [];
+        for (number in userArray){
+          if (userArray[number] != 0){
+              outputArray.push(userArray[number]);
+          }
+        }
+        console.log(userArray);
+        console.log(outputArray);
+        return outputArray.sort((a,b) => a - b);
+      }
+      function sumValues(numberArray){
+        return numberArray.reduce((a,b) => a + b, 0);
+      }
+      function meanValues(numberArray){
+        return sumValues(numberArray) / numberArray.length;
+      }
+
+      function mdValues(numberArray) {
+        var half = Math.floor((numberArray.length / 2));
+        if (numberArray.length % 2 == 0){
+          return (numberArray[half - 1] + numberArray[half]) / 2;
+        }
+        else {
+          return numberArray[half];
+        }
+      }
+
+      function exportValues(resultValue){
+        document.getElementById("resultField").innerHTML = resultValue;
+      }
+    </script>
+</head>
+<body>
+  <h1>Mean-O-matic</h1>
+  <p>Enter as many numbers as you like separated with space, comma, colon or semicolon. Matic returns sum, mean and median of the numbers.
+  Matic tries to parse numbers from given input, even if given output is gibberish.</p>
+  <form action="">
+    <label for="inputNumbers">Input numbers (Space, comma, colon or semicolon.):</label>
+      <input type="text" id="inputNumbers" value="">
+      <input type="button" id="calcSum" value="Sum" onclick="exportValues(sumValues(userValues()))">
+      <input type="button" id="calcMean" value="Mean" onclick="exportValues(meanValues(userValues()))">
+      <input type="button" id="calcMedian" value="Median" onclick="exportValues(mdValues(userValues()))"><br>
+      <output id="resultField"></output>
+  </form>
+
+
+</body>
+</html>
