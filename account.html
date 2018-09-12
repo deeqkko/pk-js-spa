@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <script type="text/javascript">
+  //Bank Account object
+    class Account {
+      constructor(balance){
+        this.balance = balance;
+      }
+      draw(amount){
+        if ((this.balance - amount) <= 0){
+          return false;
+        } else {
+          return this.balance -= amount;
+        }
+      }
+      deposit(amount){
+        return this.balance += amount;
+      }
+      balance(){
+        return this.balance;
+      }
+    }
+    //UI functions...
+      function initAccount(){
+        return myAccount = new Account(0);
+      }
+
+      function printBalance(amount, elementId){
+        document.getElementById(elementId).innerHTML = amount;
+      }
+
+      function userInput(){
+        return parseFloat(document.getElementById("amount").value);
+      }
+
+      function saveMoney(){
+        printBalance("", "systemMsg");
+        myAccount.deposit(userInput());
+        printBalance(myAccount.balance, "userBalance");
+      }
+
+      function spendMoney(){
+        printBalance("", "systemMsg");
+        if (myAccount.draw(userInput()) == false) {
+            printBalance(myAccount.balance, "userBalance");
+            printBalance("Error: Draw denied.", "systemMsg")
+        } else {
+            myAccount.draw(userInput());
+            printBalance(myAccount.balance, "userBalance");
+        }
+      }
+
+  </script>
+  <title>Robin Me Bank</title>
+</head>
+
+<body onload="initAccount();printBalance(myAccount.balance, 'userBalance')">
+  <h1>Robin Me Bank</h1>
+  <p>Prank-a-bank. Be careful. Refreshing will empty your account!</p>
+  <form action="">
+    <br>
+    <label for="userBalance">Balance:</label>
+    <output id="userBalance"></output> $<br><br>
+    <input type="number" id="amount" value="0" autofocus>
+    <input type="button" id="depButton" value="Deposit" onclick="saveMoney()">
+    <input type="button" id="drawButton" value="Draw" onclick="spendMoney()"><br>
+    <output id="systemMsg"></output>
+
+  </form>
+
+</body>
+
+</html>
