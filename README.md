@@ -148,7 +148,10 @@ filename = animballs.html
 STATUS:COMPLETE
 
 write your name on screen using canvas and gradient(s) and make it move from top to bottom
-make a stickman, which looks a bit like yourself using Canvas
 
 filename = myname.html
 STATUS: Finally, finally COMPLETE! Wee...
+
+make a stickman, which looks a bit like yourself using Canvas
+filename = stickman.html
+STATUS: OK

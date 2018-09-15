@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript">
+      var canvas, ctx, shape;
+
+      class StickMan {
+        constructor(centX, centY, headColor, lineColor, lineThickness){
+          this.headColor = headColor;
+          this.lineColor = lineColor;
+          this.lineThickness = lineThickness;
+          this.centX = centX;
+          this.centY = centY;
+        }
+        drawShape(ctx, shape, x0 = 0, y0 = 0, x1 = 0, y1 = 0, rad = 0, startAng = 0, stopAng = 0){
+          ctx.fillStyle = this.headColor;
+          ctx.lineWidth = this.lineThickness;
+          ctx.strokeStyle = this.lineColor;
+          ctx.beginPath();
+          if (shape == "arc") {
+            ctx.arc(this.centX + x0, this.centY + y0, rad, startAng, stopAng);
+          }
+          if (shape == "line") {
+            ctx.moveTo(this.centX + x0, this.centY + y0);
+            ctx.lineTo(this.centX + x1, this.centY + y1);
+          }
+          ctx.fill();
+          ctx.stroke();
+        }
+
+        drawForm(){
+          kekkonen.drawShape(ctx, "arc", 0, 0, 0, 0, 80, 0, 2*Math.PI);
+          kekkonen.drawShape(ctx, "line", 0, 80, 0, 270);
+          kekkonen.drawShape(ctx, "line", 0, 270, -80, 450);
+          kekkonen.drawShape(ctx, "line", 0, 270, 80, 450);
+          kekkonen.drawShape(ctx, "line", 0, 140, -60, 180);
+          kekkonen.drawShape(ctx, "line", 0, 140, 60, 180);
+          kekkonen.drawShape(ctx, "line", -60, 180, -120, 0);
+          kekkonen.drawShape(ctx, "line", 60, 180, 120, 0);
+          kekkonen.drawShape(ctx, "arc", 0, 0, 0, 0, 60, 0.5, 2.6);
+          kekkonen.drawShape(ctx, "line", -30, -20, -30, 0);
+          kekkonen.drawShape(ctx, "line", 30, -20, 30, 0);
+          kekkonen.drawShape(ctx, "line", -45, -30, -15, -15);
+          kekkonen.drawShape(ctx, "line", 15, -15, 45, -30);
+        }
+
+      }
+
+
+      function execute() {
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+        ctx.translate(400, 200);
+        kekkonen = new StickMan(0, 0, "red", "black", 8);
+        kekkonen.drawForm();
+
+        //animate();
+      }
+      function animate(){
+        window.requestAnimationFrame(animate);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      }
+
+
+    </script>
+    <title>StickMan</title>
+</head>
+<body onload="execute()">
+  <canvas id="canvas" width="1000" height="1000" style="border:1px solid"></canvas>
+
+
+</body>
+</html>
