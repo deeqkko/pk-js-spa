@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript">
+      var canvas, ctx, ball;
+
+      class Ball {
+        constructor(x, y, rad, xSpeed, ySpeed){
+          this.x = x;
+          this.y = y;
+          this.rad = rad;
+          this.xSpeed = xSpeed;
+          this.ySpeed = ySpeed;
+        }
+        draw(ctx, fillColor, strokeColor) {
+          ctx.beginPath();
+          ctx.fillStyle = fillColor;
+          ctx.strokeStyle = strokeColor;
+          ctx.arc(this.x, this.y, this.rad, 0, 2*Math.PI);
+          ctx.fill()
+          ctx.stroke();
+        }
+        update() {
+          this.x += this.xSpeed;
+          this.y += this.ySpeed;
+          if (this.x - this.rad/2 < 0 || this.x + this.rad > canvas.width){
+            this.xSpeed = -this.xSpeed;
+          }
+          if (this.y - this.rad < 0 || this.y + this.rad > canvas.height){
+            this.ySpeed = -this.ySpeed;
+          }
+        }
+      }
+
+      var myName = {}
+      myName.text = function textString(text, ctx, font, fSize, x, y){
+        ctx.font = fSize+" "+font;
+        ctx.fillStyle = "black"
+        ctx.fillText(text, x, y);
+      }
+
+
+      function execute(){
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+        ball1 = new Ball(50, 50, 40, 15, 10);
+        ball2 = new Ball(750, 750, 40, -10, -15);
+        ball3 = new Ball(500, 600, 30, 15, 15);
+        animate();
+      }
+      function animate(){
+        window.requestAnimationFrame(animate);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        myName.text("Kimmo", ctx, "Arial", "80px", 800, 100);
+      }
+
+
+    </script>
+    <title>Bouncing ball</title>
+</head>
+<body onload="execute()">
+  <canvas id="canvas" width="1000" height="1000" style="border:1px solid"></canvas>
+
+
+</body>
+</html>

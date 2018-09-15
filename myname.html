@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript">
+      var canvas, ctx, grd;
+
+      class myName {
+        constructor(x, y, text, font, sColor, lWidth, ySpeed){
+          this.x = x;
+          this.y = y;
+          this.text = text;
+          this.font = font;
+          this.sColor = sColor;
+          this.lWidth = lWidth;
+          this.ySpeed = ySpeed;
+
+
+        }
+        draw(ctx, grd){
+          ctx.font = this.font;
+          grd = ctx.createLinearGradient(this.x, this.y, this.x, this.y - 100);
+          grd.addColorStop(0, "green");
+          grd.addColorStop(1, "yellow");
+          ctx.fillStyle = grd;
+          ctx.strokeStyle = this.sColor;
+          ctx.lineWidth = this.lWidth;
+          ctx.fillText(this.text, this.x, this.y);
+          ctx.strokeText(this.text, this.x, this.y);
+        }
+
+        update(){
+          this.y += this.ySpeed;
+        }
+
+      }
+
+      function execute() {
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+        kimmo = new myName(400, 100, "KIMMO", "100px Arial Black", "black", 2, 1);
+        animate();
+      }
+      function animate(){
+        window.requestAnimationFrame(animate);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        kimmo.draw(ctx, grd);
+        kimmo.update();
+      }
+
+
+    </script>
+    <title>MyName</title>
+</head>
+<body onload="execute()">
+  <canvas id="canvas" width="1000" height="1000" style="border:1px solid"></canvas>
+
+
+</body>
+</html>

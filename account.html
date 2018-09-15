@@ -26,9 +26,20 @@
         return this.balance;
       }
     }
+/* Not Working!!
+    class SavingAccount extends Account {
+      constructor(balance, intrest){
+        this.balance = balance;
+        this.intrest = intrest;
+      }
+      addIntrest(){
+        this.balance *= intrest;
+      }
+    }
+*/
     //UI functions...
       function initAccount(){
-        return myAccount = new Account(0);
+        return myAccount = new SavingAccount(0);
       }
 
       function printBalance(amount, elementId){

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript">
+      var canvas, ctx;
+      function draw() {
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+        ctx.translate(400,400);
+
+        //Face
+        var faceGradient = ctx.createRadialGradient(-70, -70, 10, 50, 50, 360);
+        faceGradient.addColorStop(0, "white");
+        faceGradient.addColorStop(1, "orange");
+        ctx.fillStyle = faceGradient;
+        ctx.strokeStyle = "black"
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(0,0,200,0,2*Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        //Mouth
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 7;
+        ctx.beginPath();
+        ctx.arc(0,-40,180,0.95993,2.18166);
+        ctx.stroke();
+
+        //Eyes
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 7;
+        ctx.strokeRect(-57.5,-40,0,70);
+        ctx.strokeRect(57.5,-40,0,70);
+
+      }
+    
+    </script>
+    <title>Title</title>
+</head>
+<body onload="draw()">
+  <canvas id="canvas" width="1024" height="768"></canvas>
+
+
+</body>
+</html>
