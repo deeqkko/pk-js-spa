@@ -54,7 +54,12 @@
       function animate(){
         window.requestAnimationFrame(animate);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        myName.text("Kimmo", ctx, "Arial", "80px", 800, 100);
+        ball1.update();
+        ball2.update();
+        ball3.update();
+        ball1.draw(ctx, "blue", "black");
+        ball2.draw(ctx, "blue", "black");
+        ball3.draw(ctx, "blue", "black");
       }
 
 
