@@ -132,3 +132,23 @@ continue with above and also calculate mean (average) and median. Make separate 
 filename = sum_mean_med.html
 
 STATUS:COMPLETE
+
+Exercises for next lesson
+
+draw a simple smiley face using Canvas graphics. It could look a bit like
+http://www.publicdomainpictures.net/view-image.php?image=33364
+
+filename = smiley.html
+STATUS:COMPLETE
+
+animate a rectangle which bounces from left to right
+
+"Turn out to be 3 balls bouncing on the canvas. Sorry about that."
+filename = animballs.html
+STATUS:COMPLETE
+
+write your name on screen using canvas and gradient(s) and make it move from top to bottom
+make a stickman, which looks a bit like yourself using Canvas
+
+filename = myname.html
+STATUS: Finally, finally COMPLETE! Wee...
