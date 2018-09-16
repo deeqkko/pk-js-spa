@@ -52,10 +52,10 @@
         update(){
           this.centX += this.xSpeed;
           this.centY += this.ySpeed;
-          if (this.centX - 124 < 0 || this.centX + 124 > canvas.width) {
+          if (this.centX - (120 + this.lineThickness / 2) < 0 || this.centX + (120 + this.lineThickness / 2) > canvas.width) {
             this.xSpeed = -this.xSpeed;
           }
-          if (this.centY - 84 < 0 || this.centY + 450 > canvas.height) {
+          if (this.centY - (80 + this.lineThickness / 2) < 0 || this.centY + (450 + this.lineThickness / 5)> canvas.height) {
             this.ySpeed = -this.ySpeed;
           }
         }
@@ -67,7 +67,7 @@
         canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
 
-        kekkonen = new StickMan(400, 200, "red", "black", 8, 1, 1);
+        kekkonen = new StickMan(600, 184, "red", "black", 8, 1, 1);
         animate();
 
       }
