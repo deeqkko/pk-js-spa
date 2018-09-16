@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript">
-      var canvas, ctx, shape;
+      var canvas, ctx, shape, kekkonen;
 
       class StickMan {
         constructor(centX, centY, headColor, lineColor, lineThickness, xSpeed, ySpeed){
@@ -34,19 +34,19 @@
         }
 
         drawForm(){
-          kekkonen.drawShape(ctx, "arc", 0, 0, 0, 0, 80, 0, 2*Math.PI);
-          kekkonen.drawShape(ctx, "line", 0, 80, 0, 270);
-          kekkonen.drawShape(ctx, "line", 0, 270, -80, 450);
-          kekkonen.drawShape(ctx, "line", 0, 270, 80, 450);
-          kekkonen.drawShape(ctx, "line", 0, 140, -60, 180);
-          kekkonen.drawShape(ctx, "line", 0, 140, 60, 180);
-          kekkonen.drawShape(ctx, "line", -60, 180, -120, 0);
-          kekkonen.drawShape(ctx, "line", 60, 180, 120, 0);
-          kekkonen.drawShape(ctx, "arc", 0, 0, 0, 0, 60, 0.5, 2.6);
-          kekkonen.drawShape(ctx, "line", -30, -20, -30, 0);
-          kekkonen.drawShape(ctx, "line", 30, -20, 30, 0);
-          kekkonen.drawShape(ctx, "line", -45, -30, -15, -15);
-          kekkonen.drawShape(ctx, "line", 15, -15, 45, -30);
+          this.drawShape(ctx, "arc", 0, 0, 0, 0, 80, 0, 2*Math.PI);
+          this.drawShape(ctx, "line", 0, 80, 0, 270);
+          this.drawShape(ctx, "line", 0, 270, -80, 450);
+          this.drawShape(ctx, "line", 0, 270, 80, 450);
+          this.drawShape(ctx, "line", 0, 140, -60, 180);
+          this.drawShape(ctx, "line", 0, 140, 60, 180);
+          this.drawShape(ctx, "line", -60, 180, -120, 0);
+          this.drawShape(ctx, "line", 60, 180, 120, 0);
+          this.drawShape(ctx, "arc", 0, 0, 0, 0, 60, 0.5, 2.6);
+          this.drawShape(ctx, "line", -30, -20, -30, 0);
+          this.drawShape(ctx, "line", 30, -20, 30, 0);
+          this.drawShape(ctx, "line", -45, -30, -15, -15);
+          this.drawShape(ctx, "line", 15, -15, 45, -30);
         }
 
         update(){
