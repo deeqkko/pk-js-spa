@@ -8,12 +8,14 @@
       var canvas, ctx, shape;
 
       class StickMan {
-        constructor(centX, centY, headColor, lineColor, lineThickness){
+        constructor(centX, centY, headColor, lineColor, lineThickness, xSpeed, ySpeed){
           this.headColor = headColor;
           this.lineColor = lineColor;
           this.lineThickness = lineThickness;
           this.centX = centX;
           this.centY = centY;
+          this.xSpeed = xSpeed;
+          this.ySpeed = ySpeed;
         }
         drawShape(ctx, shape, x0 = 0, y0 = 0, x1 = 0, y1 = 0, rad = 0, startAng = 0, stopAng = 0){
           ctx.fillStyle = this.headColor;
@@ -47,22 +49,33 @@
           kekkonen.drawShape(ctx, "line", 15, -15, 45, -30);
         }
 
+        update(){
+          this.centX += this.xSpeed;
+          this.centY += this.ySpeed;
+          if (this.centX - 124 < 0 || this.centX + 124 > canvas.width) {
+            this.xSpeed = -this.xSpeed;
+          }
+          if (this.centY - 84 < 0 || this.centY + 450 > canvas.height) {
+            this.ySpeed = -this.ySpeed;
+          }
+        }
+
       }
 
 
       function execute() {
         canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
-        ctx.translate(400, 200);
-        kekkonen = new StickMan(0, 0, "red", "black", 8);
-        kekkonen.drawForm();
 
-        //animate();
+        kekkonen = new StickMan(400, 200, "red", "black", 8, 1, 1);
+        animate();
+
       }
       function animate(){
         window.requestAnimationFrame(animate);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+        kekkonen.drawForm();
+        kekkonen.update();
       }
 
 
@@ -70,7 +83,7 @@
     <title>StickMan</title>
 </head>
 <body onload="execute()">
-  <canvas id="canvas" width="1000" height="1000" style="border:1px solid"></canvas>
+  <canvas id="canvas" width="1200" height="768" style="border:1px solid"></canvas>
 
 
 </body>
