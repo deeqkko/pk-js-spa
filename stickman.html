@@ -34,19 +34,19 @@
         }
 
         drawForm(){
-          this.drawShape(ctx, "arc", 0, 0, 0, 0, 80, 0, 2*Math.PI);
-          this.drawShape(ctx, "line", 0, 80, 0, 270);
-          this.drawShape(ctx, "line", 0, 270, -80, 450);
-          this.drawShape(ctx, "line", 0, 270, 80, 450);
-          this.drawShape(ctx, "line", 0, 140, -60, 180);
-          this.drawShape(ctx, "line", 0, 140, 60, 180);
-          this.drawShape(ctx, "line", -60, 180, -120, 0);
-          this.drawShape(ctx, "line", 60, 180, 120, 0);
-          this.drawShape(ctx, "arc", 0, 0, 0, 0, 60, 0.5, 2.6);
-          this.drawShape(ctx, "line", -30, -20, -30, 0);
-          this.drawShape(ctx, "line", 30, -20, 30, 0);
-          this.drawShape(ctx, "line", -45, -30, -15, -15);
-          this.drawShape(ctx, "line", 15, -15, 45, -30);
+          this.drawShape(ctx, "arc", 0, -140, 0, 0, 80, 0, 2*Math.PI);
+          this.drawShape(ctx, "line", 0, -60, 0, 190);
+          this.drawShape(ctx, "line", 0, 190, -80, 370);
+          this.drawShape(ctx, "line", 0, 190, 80, 370);
+          this.drawShape(ctx, "line", 0, 0, -60, 100);
+          this.drawShape(ctx, "line", 0, 0, 60, 100);
+          this.drawShape(ctx, "line", -60, 100, -120, -80);
+          this.drawShape(ctx, "line", 60, 100, 120, -80);
+          this.drawShape(ctx, "arc", 0, -140, 0, -140, 60, 0.5, 2.6);
+          this.drawShape(ctx, "line", -30, -160, -30, -140);
+          this.drawShape(ctx, "line", 30, -160, 30, -140);
+          this.drawShape(ctx, "line", -45, -170, -15, -155);
+          this.drawShape(ctx, "line", 15, -155, 45, -170);
         }
 
         update(){
@@ -55,10 +55,11 @@
           if (this.centX - (120 + this.lineThickness / 2) < 0 || this.centX + (120 + this.lineThickness / 2) > canvas.width) {
             this.xSpeed = -this.xSpeed;
           }
-          if (this.centY - (80 + this.lineThickness / 2) < 0 || this.centY + (450 + this.lineThickness / 5)> canvas.height) {
+          if (this.centY - (220 + this.lineThickness / 2) < 0 || this.centY + (370 + this.lineThickness / 5)> canvas.height) {
             this.ySpeed = -this.ySpeed;
           }
         }
+
 
       }
 
@@ -66,8 +67,7 @@
       function execute() {
         canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
-
-        kekkonen = new StickMan(600, 184, "red", "black", 8, 1, 1);
+        kekkonen = new StickMan(300, 300, "red", "black", 8, 1, 2);
         animate();
 
       }
@@ -76,6 +76,8 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         kekkonen.drawForm();
         kekkonen.update();
+
+{{}}
       }
 
 
