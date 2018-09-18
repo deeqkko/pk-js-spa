@@ -49,6 +49,13 @@
 
       }
 
+      function initialize(){
+        skull = new Image();
+        skull.onload = animate;
+        skull.src = "./skull.png";
+        execute();
+      }
+
 
       function execute() {
         canvas = document.getElementById("canvas");
@@ -62,10 +69,16 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.save();
         ctx.translate(400, 370);
-        ctx.rotate(counter*0.02);
+        ctx.rotate(counter*0.01);
         kekkonen.drawForm();
+        ctx.restore();
+        ctx.save();
+        ctx.translate(900, 370);
+        ctx.rotate(counter*0.02);
+        ctx.drawImage(skull, -70, -90, skull.width*0.5, skull.height*0.5);
         counter ++;
         ctx.restore();
+
 
 
 
@@ -76,7 +89,7 @@
     </script>
     <title>StickMan</title>
 </head>
-<body onload="execute()">
+<body onload="initialize()">
   <canvas id="canvas" width="1200" height="768" style="border:1px solid"></canvas>
 
 
