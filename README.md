@@ -155,3 +155,8 @@ STATUS: Finally, finally COMPLETE! Wee...
 make a stickman, which looks a bit like yourself using Canvas
 filename = stickman.html
 STATUS: OK
+
+Make a canvas which has a stick man, which rotates around its center point (middle of torso) and a bitmap, which rotates around its middle point
+
+filename = stickman_rotate.html
+STATUS:Stand by...
