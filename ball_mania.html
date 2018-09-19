@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript">
       var canvas, ctx, footBall = [], counter = 0;
-      const ballCount = 67;
+      const ballCount = 100;
 
       Image.prototype.createNew = function(ctx, ballColor, x0, y0, xSpeed, ySpeed){
         this.xSpeed = xSpeed;
@@ -55,7 +55,7 @@
         canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
         for (counter = 0; counter < ballCount; counter++){
-            footBall[counter].createNew(ctx, randNum(3), randNum(1000), randNum(650), randNum(5) / ballCount, randNum(5) / ballCount);
+            footBall[counter].createNew(ctx, randNum(4) - 1, randNum(1000), randNum(650), randNum(10) / ballCount, randNum(10) / ballCount);
         }
         animate();
       }
