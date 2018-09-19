@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript">
+      var canvas, ctx, footBall = [], counter = 0;
+      const ballCount = 70;
+
+      Image.prototype.createNew = function(ctx, ballColor, x0, y0, xSpeed, ySpeed){
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+        this.x0 = x0;
+        this.y0 = y0;
+        this.ballColor = ballColor;
+
+      }
+
+      Image.prototype.drawImg = function(counter){
+        if (this.ballColor == 0){ctx.drawImage(footBall[counter], 0 ,0, 190, 190, this.x0, this.y0, 95, 95);}
+        if (this.ballColor == 1){ctx.drawImage(footBall[counter], 190, 0, 190, 190, this.x0, this.y0, 95, 95);}
+        if (this.ballColor == 2){ctx.drawImage(footBall[counter], 0, 190, 190, 190, this.x0, this.y0, 95, 95);}
+        if (this.ballColor == 3){ctx.drawImage(footBall[counter], 190, 190, 190, 190, this.x0, this.y0, 95, 95);}
+      }
+
+      Image.prototype.updatePos = function(){
+        this.x0 += this.xSpeed;
+        this.y0 += this.ySpeed;
+        if (this.x0 < 0 || this.x0 + 95 > canvas.width){
+          this.xSpeed = -this.xSpeed;
+          //console.log(this.xSpeed);
+        }
+        if (this.y0 < 0 || this.y0 + 90 > canvas.height){
+
+          this.ySpeed = -this.ySpeed;
+          //console.log(this.ySpeed);
+        }
+      }
+
+      function randNum(range){
+        return Math.floor(Math.random()*range+1);
+      }
+
+
+      function initialize(){
+        for (counter = 0; counter < ballCount; counter++){
+          footBall[counter] = new Image();
+          footBall[counter].onload = execute;
+          footBall[counter].src = "./Football.png";
+        }
+      }
+
+
+      function execute(){
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+        for (counter = 0; counter < ballCount; counter++){
+            footBall[counter].createNew(ctx, randNum(3), randNum(1000), randNum(650), -0.1, -0.1);
+        }
+        animate();
+      }
+
+      function animate(){
+        window.requestAnimationFrame(animate);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (counter = 0; counter < ballCount; counter++){
+          footBall[counter].drawImg(counter);
+          footBall[counter].updatePos();
+        }
+
+      }
+
+
+
+
+
+
+
+
+    </script>
+    <title>Ball Mania</title>
+</head>
+<body onload="initialize()">
+  <canvas id="canvas" width="1200" height="768" style="border:1px solid"></canvas>
+
+
+</body>
+</html>
