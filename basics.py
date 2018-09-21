@@ -1,4 +1,5 @@
 #!/usr/local/bin/python3
+#Testing sublime git interface
 
 def everyOther(start = 0, stop = 0, step = 1):
     """Returns a number sequence with given range and step
