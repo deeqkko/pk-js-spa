@@ -201,8 +201,10 @@ from a list of numbers from 1 to 40.
 filename = lottery.py
 STATUS:COMPLETE
 
+Make a program which asks user for names and keeps accumulating the names into a list. If use gives empty input, display all the names in alphabetical order, tell the number of names and how many "Jack" names your list had
 
-
+filename = namecatalog.py
+STATUS:COMPLETE
 
 
 """Make a program, which asks URL from the user.
