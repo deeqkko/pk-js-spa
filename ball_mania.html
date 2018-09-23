@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript">
       var canvas, ctx, footBall = [], counter = 0;
-      const ballCount = 100;
+      const ballCount = 70;
 
       Image.prototype.createNew = function(ctx, ballColor, x0, y0, xSpeed, ySpeed){
         this.xSpeed = xSpeed;
@@ -28,11 +28,11 @@
         this.x0 += this.xSpeed;
         this.y0 += this.ySpeed;
         if (this.x0 < 0 || this.x0 + 95 > canvas.width){
-          this.xSpeed = -this.xSpeed;
+          this.xSpeed = - this.xSpeed;
           console.log(this.xSpeed);
         }
         if (this.y0 < 0 || this.y0 + 90 > canvas.height){
-          this.ySpeed = -this.ySpeed;
+          this.ySpeed = - this.ySpeed;
           console.log(this.ySpeed);
         }
       }
