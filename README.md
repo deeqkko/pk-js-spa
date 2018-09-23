@@ -160,3 +160,38 @@ Make a canvas which has a stick man, which rotates around its center point (midd
 
 filename = stickman_rotate.html
 STATUS:COMPLETE
+
+--------------------------------------------------------------------------------
+<h2>Python section<h2>
+
+"""Make a program which prints out all the integers from 100 to 0 with -2 stepping, in other words: 100, 98, 96...2, 0
+-
+Make a program which asks use a string and displays the first letter of that string,
+the last letter of that string and length of the string. Make the program robust!
+-
+Make a program which asks a user how many pounds (lbs) and it converts the pounds to kilograms kg.
+One pound is about is about 0.45359237 kilograms.
+Make your program safe and so that it keeps asking for a valid floating point number until 1 is given.
+Display the result in 2 decimal precision"""
+
+filename = basics.py
+STATUS: COMPLETE
+
+Make a program which asks the user for initial velocity (m/s), acceleration (m/s2) and time in seconds (s). Print the position of the object calculated using the following formula. distance = v*t+0.5*a*t**2. Display the distance in meters (3 digit precision) after each second. Make the program robust.
+
+filename = position.py
+STATUS: COMPLETE
+
+"""Make a program, which asks URL from the user.
+If the URL can be opened, write the URL contents into a local file path defined by the user.
+Use binary mode"""
+
+filename = url_download.py
+STATUS: COMPLETE
+
+"""Make a program which reads a text file, which can have any number of floating point numbers, which are all in their own lines.
+The program will calculate and display the sum and average (mean) of all these numbers. Make your program fool proof.
+It should handle all common errors and ignore those lines of the input text file, which don't have valid numbers."""
+
+filenames = calcFromFile.txt, calcFromFile.py
+STATUS: COMPLETE

@@ -1,4 +1,13 @@
 #!/usr/local/bin/python3
+"""Make a program which prints out all the integers from 100 to 0 with -2 stepping, in other words: 100, 98, 96...2, 0
+-
+Make a program which asks use a string and displays the first letter of that string,
+the last letter of that string and length of the string. Make the program robust!
+-
+Make a program which asks a user how many pounds (lbs) and it converts the pounds to kilograms kg.
+One pound is about is about 0.45359237 kilograms.
+Make your program safe and so that it keeps asking for a valid floating point number until 1 is given.
+Display the result in 2 decimal precision"""
 
 def everyOther(start = 0, stop = 0, step = 1):
     """Returns a number sequence with given range and step
