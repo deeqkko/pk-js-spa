@@ -182,6 +182,29 @@ Make a program which asks the user for initial velocity (m/s), acceleration (m/s
 filename = position.py
 STATUS: COMPLETE
 
+Make a function average(a) which calculates an average of a list a of numbers.
+Write if __name__=='__main__': main() and test your function with couple of different parameters
+
+filename = average.py
+STATUS: COMPLETE
+
+Make a function average(a) which calculates an average of a list a of numbers.
+Write if __name__=='__main__': main() and test your function with couple of different parameters
+
+filename = median.py
+STATUS:COMPLETE
+
+Make a program, which gives a Finnish lottery (lotto) row.
+In other words write a program which outputs 7 random numbers in ascending order
+from a list of numbers from 1 to 40.
+
+filename = lottery.py
+STATUS:COMPLETE
+
+
+
+
+
 """Make a program, which asks URL from the user.
 If the URL can be opened, write the URL contents into a local file path defined by the user.
 Use binary mode"""
