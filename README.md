@@ -206,6 +206,8 @@ Make a program which asks user for names and keeps accumulating the names into a
 filename = namecatalog.py
 STATUS:COMPLETE
 
+Make a simple dictionary application. The user can search words from the dictionary. If the word is found, it displays the translation. if the word is not found, the program displays "Word not found. Please input a definition". If user submits a definition, it adds a new word to this dictionary.
+
 
 """Make a program, which asks URL from the user.
 If the URL can be opened, write the URL contents into a local file path defined by the user.
@@ -220,3 +222,12 @@ It should handle all common errors and ignore those lines of the input text file
 
 filenames = calcFromFile.txt, calcFromFile.py
 STATUS: COMPLETE
+
+Make a simple dictionary application like the last exercise in the previous lesson, but it will also save the dictionary into a file using pickle.dump() (serialization). When the application is started it checks if the file exists and will try to load the dictionary using pickle.load().
+
+filenames = pickledictionary.py, dictionary.db
+STATUS:COMPLETE
+
+Do the same as exercise #3 above, but using JSON text file format to save the dictionary instead.
+
+filenames = jsondictionary.py, dictionary.json
