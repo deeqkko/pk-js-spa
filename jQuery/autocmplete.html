@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+        var countryList = [
+            "Austria",
+            "Italy",
+            "Belgium",
+            "Latvia",
+            "Bulgaria",
+            "Lithuania",
+            "Croatia",
+            "Luxembourg",
+            "Cyprus",
+            "Malta",
+            "Czech Republic",
+            "Netherlands",
+            "Denmark",
+            "Poland",
+            "Estonia",
+            "Portugal",
+            "Finland",
+            "Romania",
+            "France",
+            "Slovakia",
+            "Germany",
+            "Slovenia",
+            "Greece",
+            "Spain",
+            "Hungary",
+            "Sweden",
+            "Ireland",
+            "United Kingdom",
+        ];
+        $('#country').autocomplete({
+          source: countryList
+        });
+        $('#datepick').datepicker({
+          showWeek: true
+        });
+    	});
+    </script>
+    <title>Title</title>
+</head>
+<body>
+  <form class="" action="index.html" method="post">
+    <input type="text" id="country" value="" autofocus>
+    <input type="text" id="datepick" value="">
+  </form>
+
+</body>
+</html>
