@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countries</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <script type="text/javascript">
+    $( 'document' ).ready(function() {
+      $( '#select-native-1' ).change(function() {
+       let result = "You have selected " + $( '#select-native-1' ).val();
+       document.getElementById('result').innerHTML = result;
+      })
+    });
+  </script>
+
+
+</head>
+<body>
+
+<div data-role="page">
+
+  <div data-role="header">
+            <h1>Countries</h1>
+  </div><!-- /header -->
+
+	<div data-role="main" class="ui-content">
+		  <form action="">
+      <div class="ui-field-contain">
+        <label for="select-native-1" class="select">Select Country:</label>
+        <select name="select-native-1" id="select-native-1">
+          <option value="China">China</option>
+          <option value="Finland" selected>Finland</option>
+          <option value="Germany">Germany</option>
+          <option value="Japan">Japan</option>
+          <option value="United States">United States</option>
+        </select>
+      </div>
+      </form>
+    <output name="result" id="result"></output>
+	</div><!-- /content -->
+
+
+</div><!-- /page -->
+
+</body>
+</html>

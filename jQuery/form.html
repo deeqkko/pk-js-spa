@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countries</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <script type="text/javascript">
+
+  </script>
+
+
+</head>
+<body>
+
+<div data-role="page">
+
+  <div data-role="header">
+            <h1>Tell me everything</h1>
+  </div><!-- /header -->
+
+	<div data-role="main" class="ui-content">
+    <form class="" action="index.html" method="post">
+      <label for="textinput-s">Name:</label>
+      <input type="text" name="textinput-s" id="textinput-s" placeholder="Name" data-clear-btn="true" value="">
+      <label for="dateField">Birthday:</label>
+      <input type="date" data-role="date" data-inline="true" name="dateField">
+      <label for="slider-s">Height:</label>
+      <input type="range" name="slider-s" id="slider-s" value="175" min="25" max="300" data-highlight="true">
+      <label>
+        <input type="radio" name="radio-choice-gender" id="radio-choice-genderMale">Male
+      </label>
+      <label for="radio-choice-genderFemale">Female</label>
+      <input type="radio" name="radio-choice-gender" id="radio-choice-genderFemale" class="custom">
+      <label for="select-native-1">Country: </label>
+      <select name="select-native-1" id="select-native-1">
+        <option value="Finland" selected>Finland</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Russia">Russia</option>
+      </select>
+      <label for="checkbox">Hobbies:</label>
+      <label><input type="checkbox" name="checkbox-0" /> History </label>
+      <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+      <label for="checkbox-1">Science</label>
+      <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+      <label for="checkbox-2">Health</label>
+      <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
+      <label for="checkbox-3">Sports</label>
+      <input type="checkbox" name="checkbox-4" id="checkbox-4" class="custom" />
+      <label for="checkbox-4">Games</label>
+
+      </select>
+
+    </form>
+
+	</div><!-- /content -->
+
+
+</div><!-- /page -->
+
+</body>
+</html>
