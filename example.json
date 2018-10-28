@@ -1,0 +1,358 @@
+{
+   "html_attributions" : [],
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.7373073,
+               "lng" : 24.7548524
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.75614290000001,
+                  "lng" : 24.8419944
+               },
+               "southwest" : {
+                  "lat" : 60.7100713,
+                  "lng" : 24.7290607
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "f7bfa8fd8eb7ff278a8ae6560c707d36033f076d",
+         "name" : "Riihimäki",
+         "photos" : [
+            {
+               "height" : 2250,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100793855473678732811/photos\"\u003eVesa Toivanen\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAMaegqJFj6N72_i3flUegoWmyo579POBEIXpTfz3h3YJgsnNFQujBTGU23yWwg38iTigOtQVuPjAcdIzm_MsUFvLoaYSIxyGaTvvY4Ci-nv6btYukp0Qgce_2X5rchw9KEhASC37FgYesM03Xklopys-RGhQcS4TQ1gtz59udz43t2QXijPTBCw",
+               "width" : 4000
+            }
+         ],
+         "place_id" : "ChIJfw7g4F8NjkYR0L1LVVG1AAQ",
+         "reference" : "ChIJfw7g4F8NjkYR0L1LVVG1AAQ",
+         "scope" : "GOOGLE",
+         "types" : [ "locality", "political" ],
+         "vicinity" : "Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.733458,
+               "lng" : 24.7612646
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.7348052302915,
+                  "lng" : 24.7627008802915
+               },
+               "southwest" : {
+                  "lat" : 60.73210726970849,
+                  "lng" : 24.7600029197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "4a4d2693a0dccd80312b8fff1ffcc9ecdfa0b89e",
+         "name" : "CNC Systems Finland Oy",
+         "place_id" : "ChIJGYUiJo4SjkYRo1m7W33fO6U",
+         "plus_code" : {
+            "compound_code" : "PQM6+9G Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+9G"
+         },
+         "reference" : "ChIJGYUiJo4SjkYRo1m7W33fO6U",
+         "scope" : "GOOGLE",
+         "types" : [ "point_of_interest", "establishment" ],
+         "vicinity" : "Kaartokatu 2, Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.7339268,
+               "lng" : 24.760952
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.7352704802915,
+                  "lng" : 24.7625640802915
+               },
+               "southwest" : {
+                  "lat" : 60.73257251970849,
+                  "lng" : 24.7598661197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "1563496f667d86ce5836fe9bbc893c5d18d54efd",
+         "name" : "Liikenneopetuskeskus",
+         "place_id" : "ChIJeXeklo9djkYRRc8sskeipQ8",
+         "plus_code" : {
+            "compound_code" : "PQM6+H9 Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+H9"
+         },
+         "reference" : "ChIJeXeklo9djkYRRc8sskeipQ8",
+         "scope" : "GOOGLE",
+         "types" : [ "point_of_interest", "establishment" ],
+         "vicinity" : "Kaartokatu 2, Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.73391179999999,
+               "lng" : 24.760497
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.73525093029149,
+                  "lng" : 24.76233553029151
+               },
+               "southwest" : {
+                  "lat" : 60.73255296970848,
+                  "lng" : 24.7596375697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "fadfdbe360ffdfaec470660ee0e553ad81cfded5",
+         "name" : "Hämeen ammattikorkeakoulu Riihimäki",
+         "photos" : [
+            {
+               "height" : 325,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113053527289375928131/photos\"\u003eHämeen ammattikorkeakoulu Riihimäki\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAuCzS0208lmxiIYO9fdhdZnE5beH8eSgePt3M0Dh5Vq-nnM3Nz6GMpe8IenlYIhmaSjHmjZI9-Eex1iZHwBzGaxfRW1oUK9RjfksaWE1Gn2D6MfLCpg5qG01RlwTvAV8UEhANXjEvT72FSUPtjUe3PJzPGhSKyI8p1M6-Z-CwHbhEQYDTVfjTew",
+               "width" : 580
+            }
+         ],
+         "place_id" : "ChIJZVsbxY8SjkYREy3yGUyOuiE",
+         "plus_code" : {
+            "compound_code" : "PQM6+H5 Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+H5"
+         },
+         "rating" : 3.4,
+         "reference" : "ChIJZVsbxY8SjkYREy3yGUyOuiE",
+         "scope" : "GOOGLE",
+         "types" : [ "point_of_interest", "establishment" ],
+         "vicinity" : "Kaartokatu 2, Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.73391179999999,
+               "lng" : 24.760497
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.73525093029149,
+                  "lng" : 24.76233553029151
+               },
+               "southwest" : {
+                  "lat" : 60.73255296970848,
+                  "lng" : 24.7596375697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "024044388a4d83b3d028b52fad9ba6b67a680793",
+         "name" : "HYV01-Riihimäki",
+         "place_id" : "ChIJY-LkiPcTjkYRVwrujxEkbnw",
+         "plus_code" : {
+            "compound_code" : "PQM6+H5 Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+H5"
+         },
+         "reference" : "ChIJY-LkiPcTjkYRVwrujxEkbnw",
+         "scope" : "GOOGLE",
+         "types" : [ "point_of_interest", "establishment" ],
+         "vicinity" : "Kaartokatu 2, Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.7337864,
+               "lng" : 24.7624995
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.73517158029151,
+                  "lng" : 24.7639839802915
+               },
+               "southwest" : {
+                  "lat" : 60.73247361970849,
+                  "lng" : 24.7612860197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "5e20ac9884d7a97abc7bea2213a18a97a1b44490",
+         "name" : "Pohjanheimo Heikki Mikko Juhani",
+         "place_id" : "ChIJZ4yENo4SjkYRMLr9bivo2Qo",
+         "plus_code" : {
+            "compound_code" : "PQM6+GX Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+GX"
+         },
+         "reference" : "ChIJZ4yENo4SjkYRMLr9bivo2Qo",
+         "scope" : "GOOGLE",
+         "types" : [ "point_of_interest", "establishment" ],
+         "vicinity" : "Opintie 8, Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.7337864,
+               "lng" : 24.7624995
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.73517158029151,
+                  "lng" : 24.7639839802915
+               },
+               "southwest" : {
+                  "lat" : 60.73247361970849,
+                  "lng" : 24.7612860197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "8b64d061acc67cd6c91bf6a9518d39763432196d",
+         "name" : "Riihimäen Sähkölämpö Oy",
+         "place_id" : "ChIJZ4yENo4SjkYR6asrUvfwCPo",
+         "plus_code" : {
+            "compound_code" : "PQM6+GX Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+GX"
+         },
+         "reference" : "ChIJZ4yENo4SjkYR6asrUvfwCPo",
+         "scope" : "GOOGLE",
+         "types" : [ "point_of_interest", "establishment" ],
+         "vicinity" : "Opintie 8, Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.7344549,
+               "lng" : 24.761339
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.7358011802915,
+                  "lng" : 24.7627846802915
+               },
+               "southwest" : {
+                  "lat" : 60.73310321970849,
+                  "lng" : 24.7600867197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "ff8b516cf3b4024283c62b2165ef37101abdc0b3",
+         "name" : "Mtk",
+         "place_id" : "ChIJizmBKI4SjkYRKDIpc7BnNwM",
+         "plus_code" : {
+            "compound_code" : "PQM6+QG Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+QG"
+         },
+         "reference" : "ChIJizmBKI4SjkYRKDIpc7BnNwM",
+         "scope" : "GOOGLE",
+         "types" : [ "school", "point_of_interest", "establishment" ],
+         "vicinity" : "Kaartokatu 2, Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.7344902,
+               "lng" : 24.7622761
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.7358128802915,
+                  "lng" : 24.7637057802915
+               },
+               "southwest" : {
+                  "lat" : 60.73311491970849,
+                  "lng" : 24.7610078197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "7464d130e76a8a9d606d57c7e232f4bf1bd84db8",
+         "name" : "Saldoset",
+         "place_id" : "ChIJGwzgJI4SjkYR0yDyAdaoUWs",
+         "plus_code" : {
+            "compound_code" : "PQM6+QW Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+QW"
+         },
+         "reference" : "ChIJGwzgJI4SjkYR0yDyAdaoUWs",
+         "scope" : "GOOGLE",
+         "types" : [ "point_of_interest", "establishment" ],
+         "vicinity" : "Koivistonrinne 4, Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.7344902,
+               "lng" : 24.7622761
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.7358128802915,
+                  "lng" : 24.7637057802915
+               },
+               "southwest" : {
+                  "lat" : 60.73311491970849,
+                  "lng" : 24.7610078197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "9ad1ad032c3eda36a93cce095062fe907eae5afb",
+         "name" : "Faslo Oy",
+         "place_id" : "ChIJGwzgJI4SjkYRd_VrsWiQvug",
+         "plus_code" : {
+            "compound_code" : "PQM6+QW Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+QW"
+         },
+         "reference" : "ChIJGwzgJI4SjkYRd_VrsWiQvug",
+         "scope" : "GOOGLE",
+         "types" : [ "point_of_interest", "establishment" ],
+         "vicinity" : "Koivistonrinne 4, Riihimäki"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 60.73305219999999,
+               "lng" : 24.7604533
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 60.7344011802915,
+                  "lng" : 24.7618022802915
+               },
+               "southwest" : {
+                  "lat" : 60.73170321970849,
+                  "lng" : 24.7591043197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/bus-71.png",
+         "id" : "fd360fbbbe32e42aa55930bc58c4d2304e456585",
+         "name" : "Koivistonmäki P",
+         "place_id" : "ChIJmbl62o8SjkYR6cuo7wwzv2Y",
+         "plus_code" : {
+            "compound_code" : "PQM6+65 Riihimäki, Finland",
+            "global_code" : "9GG6PQM6+65"
+         },
+         "reference" : "ChIJmbl62o8SjkYR6cuo7wwzv2Y",
+         "scope" : "GOOGLE",
+         "types" : [
+            "bus_station",
+            "transit_station",
+            "point_of_interest",
+            "establishment"
+         ],
+         "vicinity" : "Finland"
+      }
+   ],
+   "status" : "OK"
+}
